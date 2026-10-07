@@ -168,3 +168,150 @@ body {
     position: static;
   }
 }
+
+/* Payment Page */
+
+.payment-page {
+  min-height: 100vh;
+  background: #f4f6f8;
+  padding: 40px 20px;
+}
+
+.payment-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 35px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.payment-container h1 {
+  text-align: center;
+  color: #222;
+  margin-bottom: 30px;
+}
+
+.payment-container h2 {
+  color: #333;
+  margin: 25px 0 15px;
+}
+
+.payment-items {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.payment-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px;
+  border-bottom: 1px solid #eee;
+}
+
+.payment-item:last-child {
+  border-bottom: none;
+}
+
+.payment-item h3 {
+  margin: 0 0 5px;
+}
+
+.payment-item p {
+  margin: 0;
+  color: #666;
+}
+
+.payment-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  padding: 20px 0;
+  border-bottom: 2px solid #222;
+}
+
+.back-shopping {
+  display: inline-block;
+  margin: 20px 0;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.back-shopping:hover {
+  text-decoration: underline;
+}
+
+.payment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.payment-form label {
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.payment-form input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.payment-form input:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+.card-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.card-row div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.payment-form button {
+  margin-top: 20px;
+  padding: 13px;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.payment-form button:hover {
+  background: #1d4ed8;
+}
+
+@media (max-width: 600px) {
+  .payment-container {
+    padding: 20px;
+  }
+
+  .card-row {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+}
+
+.payment-success {
+  margin-top: 15px;
+  padding: 12px;
+  background: #dcfce7;
+  color: #166534;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: bold;
+}
