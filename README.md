@@ -1,16 +1,73 @@
-# React + Vite
+# ReactJS Context API - Task 29
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+## Task 29 - ReactJS Context API
 
-Currently, two official plugins are available:
+This project extends the Shoe Store application from the previous task by implementing a shopping cart using the React Context API and adding a payment functionality.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Problem Statement
 
-## React Compiler
+Implement a payment functionality in an online shoe store using the Context API in React.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+When the user clicks the "Proceed to Payment" button in the shopping cart, they are redirected to a payment page.
 
-## Expanding the Oxlint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+- Shoe product listing
+- Add shoes to shopping cart
+- Increase and decrease product quantity
+- Automatic cart total calculation
+- React Context API for cart state management
+- Proceed to Payment button
+- Payment page
+- Shopping cart items displayed on payment page
+- Return to Shopping option
+- Credit card payment form
+- Payment success message
+- Responsive user interface
+
+## React Context API
+
+The application uses React Context API to manage the shopping cart state.
+
+The following cart operations are handled through Context API:
+
+- Add item to cart
+- Increase quantity
+- Decrease quantity
+- Calculate total price
+
+## Payment Page
+
+The payment page displays:
+
+- Cart items
+- Product quantities
+- Individual item prices
+- Total amount
+- Return to Shopping option
+- Credit card payment form
+
+## Technologies Used
+
+- React.js
+- JavaScript
+- HTML5
+- CSS3
+- React Router DOM
+- React Context API
+- Vite
+
+## Project Structure
+
+```text
+src/
+├── components/
+├── context/
+│   └── CartContext.jsx
+├── pages/
+│   └── Payment.jsx
+├── assets/
+├── App.jsx
+├── App.css
+├── index.css
+└── main.jsx
